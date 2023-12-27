@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="public/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>STOPWATCH</h1>
+        <div id="time">
+            <span class="digit" id="hr">00</span>
+            <span class="txt">:</span>
+            <span class="digit" id="min">00</span>
+            <span class="txt">:</span>
+            <span class="digit" id="sec">00</span>
+            <span class="txt">.</span>
+            <span class="digit" id="mil">00</span>
+        </div>
+        <div id="controls">
+            <button class="btn" id="start">Start</button>
+            <button class="btn" id="stop">Stop</button>
+            <button class="btn" id="reset">Reset</button>
+            <button class="btn" id="lap">Lap</button>
+        </div>
+    </div>
+    <!-- Cartoon character holding the container -->
+    
+    <div class="lapTime">
+        <ul id="laps"></ul>
+        <div id="lapTime">Lap Time: 00:00:00.0</div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

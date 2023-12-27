@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFF0F5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(300deg, #0E185F, #2FA4FF, #27005D);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.container {
+    height: 300px;
+    width: 650px;
+    background-color: #E4F1FF;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    margin: 0px;
+    position: relative;
+    text-align: center;
+    overflow-y: auto;
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    color: #071952;
+}
+
+.digit, .txt {
+    font-size: 90px;
+    color: #071952;
+    font-family: 'Teko', sans-serif;
+}
+
+.btn {
+    width: 100px;
+    padding: 10px 15px;
+    margin: 0px 20px;
+    border-radius: 10px; 
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.5s;
+    font-family: 'Source Code Pro', monospace;
+    color: #071952;
+    font-weight: 500;
+}
+
+  
+#start { 
+    background-color: #0e85fc; 
+} 
+  
+#stop { 
+    background-color: #2CD3E1; 
+} 
+  
+#reset { 
+    background-color: #A6F6FF; 
+    color: #000;
+}
+
+.lapTime {
+  display: none; /* Initially hide the lapTime container */
+  height: 500px;
+  width: 200px;
+  background-color: #E4F1FF;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  text-align: left;
+  font-family: 'Source Code Pro', monospace;
+  color: #071952;
+}
+
+@media (max-width: 768px) {
+  .lapTime {
+      width: 100%;
+      align-items: flex-start; /* Align items to the start (left) on smaller screens */
+      border-radius: 0;
+  }
+
+  #time {
+      order: 1; /* Move the time box below on smaller screens */
+  }
+}
+
+#laps {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+

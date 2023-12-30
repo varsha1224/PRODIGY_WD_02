@@ -41,6 +41,14 @@ h1 {
     color: #071952;
 }
 
+#time {
+    background-image: url('./images/bg.png');
+    background-size: cover; /* or contain, depending on your preference */
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
 .digit, .txt {
     font-size: 90px;
     color: #071952;
@@ -108,5 +116,4 @@ h1 {
   max-height: 450px;
   overflow-y: auto;
 }
-
 

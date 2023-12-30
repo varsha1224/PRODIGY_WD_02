@@ -43,7 +43,7 @@ h1 {
 
 #time {
     background-image: url('./images/bg.png');
-    background-size: cover; /* or contain, depending on your preference */
+    background-size: cover; 
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -83,7 +83,7 @@ h1 {
 }
 
 .lapTime {
-  display: none; /* Initially hide the lapTime container */
+  display: none; /* To initially hide the lapTime container */
   height: 500px;
   width: 200px;
   background-color: #E4F1FF;
@@ -100,12 +100,12 @@ h1 {
 @media (max-width: 768px) {
   .lapTime {
       width: 100%;
-      align-items: flex-start; /* Align items to the start (left) on smaller screens */
+      align-items: flex-start; 
       border-radius: 0;
   }
 
   #time {
-      order: 1; /* Move the time box below on smaller screens */
+      order: 1; 
   }
 }
 
